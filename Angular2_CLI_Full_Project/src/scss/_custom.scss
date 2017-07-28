@@ -1,1 +1,15 @@
 // Here you can add other styles
+
+
+.sidebar {
+	background: #125817!important;
+}
+
+.sidebar .nav .nav-item .nav-link.active, .sidebar .nav .nav-item .navbar .active.dropdown-toggle, .navbar .sidebar .nav .nav-item .active.dropdown-toggle {
+	background: #116117!important;
+}
+
+header.navbar .navbar-brand {
+	background-size: 135px auto!important;
+	width: 205px!important;
+}

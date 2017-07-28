@@ -1,0 +1,325 @@
+<div class="animated fadeIn">
+  
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Agency
+        </div>
+        <div class="card-block">
+        <form action="" method="post" class="form-horizontal ">
+            <div class="form-group row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control" placeholder="Phone">
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="col-3">
+                <select class="form-control">
+                    <option value="">-All State-</option>
+                    <option value="1">Johor</option>
+                    <option value="2">Kedah</option>
+                    <option value="3">Kelantan</option>
+                    <option value="4">Kuala Lumpur</option>
+                    <option value="5">Melaka</option>
+                    <option value="6">Negeri Sembilan</option>
+                    </select>
+              </div> 
+              <div class="col-2">
+                <select class="form-control">
+                    <option value="">-Sort-</option>
+                    <option value="1">Performance</option>
+                    <option value="2">Agency Name</option>
+                    <option value="3">Date Added</option> 
+                    </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-3">
+                <button type="submit" class="btn btn-sm btn-primary">Search</button>
+              </div>
+            </div>
+            
+          </form>
+          <table class="table table-hover table-outline mb-0 hidden-sm-down">
+            <thead class="thead-default">
+              <tr>
+                <th class="text-center"><i class="icon-people"></i></th>
+                <th>Name</th>
+                <th class="text-center">Location</th>
+                <th>Performance</th>
+                <th class="text-center">Assigned</th>
+                <th>Activity</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/1.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/1.jpg">
+                    <span class="avatar-status badge-success"></span>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                  <a [routerLink]="['/components/viewagent/2']">ABC Sdn Bhd</a>
+                  </div>
+                  <div class="small text-muted">
+                    <span>New</span> | Registered: Jan 1, 2015
+                  </div>
+                </td>
+                <td class="text-center">
+                  Petaling Jaya
+                </td>
+                <td>
+                  <div class="clearfix">
+                    <div class="float-left">
+                      <strong>50%</strong>
+                    </div>
+                    <div class="float-right">
+                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                    </div>
+                  </div>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  2312
+                </td>
+                <td>
+                  <div class="small text-muted">Last login</div>
+                  <strong>10 sec ago</strong>
+                </td>
+                <td>
+                  <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/2.jpg">
+                    <span class="avatar-status badge-danger"></span>
+                  </div>
+                </td>
+                <td>
+                  <div>Star Sdn Bhd</div>
+                  <div class="small text-muted">
+
+                    <span>Recurring</span> | Registered: Jan 1, 2015
+                  </div>
+                </td>
+                <td class="text-center">
+                  Seremban
+                </td>
+                <td>
+                  <div class="clearfix">
+                    <div class="float-left">
+                      <strong>10%</strong>
+                    </div>
+                    <div class="float-right">
+                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                    </div>
+                  </div>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  4123
+                </td>
+                <td>
+                  <div class="small text-muted">Last login</div>
+                  <strong>5 minutes ago</strong>
+                </td>
+                <td>
+                  <span class="badge badge-warning">Inactive</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/3.jpg">
+                    <span class="avatar-status badge-warning"></span>
+                  </div>
+                </td>
+                <td>
+                  <div>Repo Enterprise</div>
+                  <div class="small text-muted">
+                    <span>New</span> | Registered: Jan 1, 2015
+                  </div>
+                </td>
+                <td class="text-center">
+                  Ipoh
+                </td>
+                <td>
+                  <div class="clearfix">
+                    <div class="float-left">
+                      <strong>74%</strong>
+                    </div>
+                    <div class="float-right">
+                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                    </div>
+                  </div>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  4123
+                </td>
+                <td>
+                  <div class="small text-muted">Last login</div>
+                  <strong>1 hour ago</strong>
+                </td>
+                <td>
+                  <span class="badge badge-danger">Terminated</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/4.jpg">
+                    <span class="avatar-status badge-default"></span>
+                  </div>
+                </td>
+                <td>
+                  <div>Nadia Idris</div>
+                  <div class="small text-muted">
+                    <span>New</span> | Registered: Jan 1, 2015
+                  </div>
+                </td>
+                <td class="text-center">
+                  Shah Alam
+                </td>
+                <td>
+                  <div class="clearfix">
+                    <div class="float-left">
+                      <strong>98%</strong>
+                    </div>
+                    <div class="float-right">
+                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                    </div>
+                  </div>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  2243
+                </td>
+                <td>
+                  <div class="small text-muted">Last login</div>
+                  <strong>Last month</strong>
+                </td>
+                <td>
+                  <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/5.jpg">
+                    <span class="avatar-status badge-success"></span>
+                  </div>
+                </td>
+                <td>
+                  <div>Micheal Yap</div>
+                  <div class="small text-muted">
+                    <span>New</span> | Registered: Jan 1, 2015
+                  </div>
+                </td>
+                <td class="text-center">
+                  Kuala Lumpur
+                </td>
+                <td>
+                  <div class="clearfix">
+                    <div class="float-left">
+                      <strong>22%</strong>
+                    </div>
+                    <div class="float-right">
+                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                    </div>
+                  </div>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  5323
+                </td>
+                <td>
+                  <div class="small text-muted">Last login</div>
+                  <strong>Last week</strong>
+                </td>
+                <td>
+                  <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="assets/img/avatars/6.jpg">
+                    <span class="avatar-status badge-danger"></span>
+                  </div>
+                </td>
+                <td>
+                  <div>David Lau</div>
+                  <div class="small text-muted">
+                    <span>New</span> | Registered: Jan 1, 2015
+                  </div>
+                </td>
+                <td class="text-center">
+                  Puchong
+                </td>
+                <td>
+                  <div class="clearfix">
+                    <div class="float-left">
+                      <strong>43%</strong>
+                    </div>
+                    <div class="float-right">
+                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                    </div>
+                  </div>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  4231
+                </td>
+                <td>
+                  <div class="small text-muted">Last login</div>
+                  <strong>Yesterday</strong>
+                </td>
+                <td>
+                  <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br/>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+</div>

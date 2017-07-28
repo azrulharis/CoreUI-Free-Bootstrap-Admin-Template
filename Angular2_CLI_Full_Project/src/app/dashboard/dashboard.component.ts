@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Http } from '@angular/http'; 
+ 
 
 @Component({
   templateUrl: 'dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
 
+ 
   // constructor( ) { }
-
+ 
   public brandPrimary: string =  '#20a8d8';
   public brandSuccess: string =  '#4dbd74';
   public brandInfo: string =   '#63c2de';
@@ -16,6 +19,7 @@ export class DashboardComponent implements OnInit {
 
   // dropdown buttons
   public status: { isopen: boolean } = { isopen: false };
+ 
   public toggleDropdown($event: MouseEvent): void {
     $event.preventDefault();
     $event.stopPropagation();
@@ -31,8 +35,11 @@ export class DashboardComponent implements OnInit {
 
     const rgba = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + opacity / 100 + ')';
     return rgba;
-  }
-
+  } 
+  // Pie
+  public pieChartLabels: string[] = ['CIMB', 'Maybank', 'Public Bank', 'AEON', 'AM Bank', 'FPX', 'Online Payment'];
+  public pieChartData: number[] = [300, 500, 100, 123, 290, 100, 90];
+  public pieChartType: string = 'pie';
   // events
   public chartClicked(e: any): void {
     console.log(e);
@@ -240,16 +247,12 @@ export class DashboardComponent implements OnInit {
   public mainChartData: Array<any> = [
     {
       data: this.mainChartData1,
-      label: 'Current'
+      label: 'Data Collected'
     },
     {
       data: this.mainChartData2,
-      label: 'Previous'
-    },
-    {
-      data: this.mainChartData3,
-      label: 'BEP'
-    }
+      label: 'Amount Collected'
+    } 
   ];
   public mainChartLabels: Array<any> = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   public mainChartOptions: any = {
@@ -460,7 +463,7 @@ export class DashboardComponent implements OnInit {
   public sparklineChartType: string = 'line';
 
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     // generate random values for mainChart
     for (let i = 0; i <= this.mainChartElements; i++) {
       this.mainChartData1.push(this.random(50, 200));

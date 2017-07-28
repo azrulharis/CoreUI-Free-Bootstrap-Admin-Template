@@ -1,0 +1,141 @@
+<div class="animated fadeIn">
+  
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Active Repo (28 July 2017)
+        </div>
+        <div class="card-block">
+        <form action="" method="post" class="form-horizontal ">
+            <div class="form-group row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Reg. No">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Owner Name">
+              </div>
+              <div class="col-3">
+                <select class="form-control">
+                    <option value="">-Status-</option>
+                    <option value="1">Success</option>
+                    <option value="2">Failed</option>
+                    <option value="3">Settlement</option> 
+                    </select>
+              </div> 
+              <div class="col-3">
+                <select class="form-control">
+                    <option value="">-All Agency-</option>
+                    <option value="1">Agency XYZ</option>
+                    <option value="2">Voyager Enterprise</option>
+                    <option value="3">Rahim & Friend</option>
+                    <option value="4">Zaki Zubirr</option>
+                    <option value="5">Repo R Sdn Bhd</option>
+                    <option value="6">Kaki Tarik Sdn Bhd</option>
+                    </select>
+              </div> 
+            </div>
+            <div class="form-group row">
+              <div class="col-3">
+                <button type="submit" class="btn btn-sm btn-primary">Search</button>
+              </div>
+            </div>
+            
+          </form>
+          <table class="table table-bordered table-striped table-condensed">
+            <thead>
+              <tr> 
+                <th>Reg. No</th>
+                <th>Customer Name</th>
+                <th>Loan ID</th>
+                <th>Model</th>
+                <th>OSB</th>
+                <th>Agency</th>
+                <th>Repo Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> 
+                <td>WWW9090</td>
+                <td>John Doe</td>
+                <td>580304053433</td>
+                <td>Proton Waja</td>
+                <td>RM4600</td>
+                <td>XYZ SDN BHD</td>
+
+                <td>
+                  <span class="badge badge-success">Store Yard</span>
+                </td>
+                <td><a [routerLink]="['/components/viewrepo/2']" class="btn btn-sm btn-primary">View</a></td>
+              </tr> 
+              <tr> 
+                <td>AKU8055</td>
+                <td>John Doe</td>
+                <td>580304053433</td>
+                <td>Proton Perdana</td>
+                <td>RM4360</td>
+                <td>Ahmad Syah</td>
+                <td>
+                  <span class="badge badge-danger">Failed</span>
+                </td>
+                <td><a [routerLink]="['/components/viewrepo/2']" class="btn btn-sm btn-primary">View</a></td>
+              </tr>  
+              <tr> 
+                <td>WR1300M</td>
+                <td>John Doe</td>
+                <td>580304053433</td>
+                <td>Nissan Skyline</td>
+                <td>RM7860</td>
+                <td>XYZ SDN BHD</td>
+                <td>
+                  <span class="badge badge-primary">Repossessed</span>
+                </td>
+                <td><a [routerLink]="['/components/viewrepo/2']" class="btn btn-sm btn-primary">View</a></td>
+              </tr>  
+              <tr> 
+                <td>WTH9090</td>
+                <td>John Doe</td>
+                <td>580304053433</td>
+                <td>Honda Accord</td>
+                <td>RM4860</td>
+                <td>YII SDN BHD</td>
+                <td>
+                  <span class="badge badge-primary">Police Reported</span>
+                </td>
+                <td><a [routerLink]="['/components/viewrepo/2']" class="btn btn-sm btn-primary">View</a></td>
+              </tr>  
+              <tr> 
+                <td>WGA9090</td>
+                <td>John Doe</td>
+                <td>580304053433</td>
+                <td>Perodua Myvi</td>
+                <td>RM2230</td>
+                <td>XYZ SDN BHD</td>
+                <td>
+                  <span class="badge badge-primary">Repossessed</span>
+                </td>
+                <td><a [routerLink]="['/components/viewrepo/2']" class="btn btn-sm btn-primary">View</a></td>
+              </tr> 
+            </tbody>
+          </table>
+          <br/>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+</div>

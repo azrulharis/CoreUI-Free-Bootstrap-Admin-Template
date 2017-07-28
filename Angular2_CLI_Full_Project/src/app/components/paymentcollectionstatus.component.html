@@ -1,0 +1,105 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Receivable Payment List
+        </div>
+        <div class="card-block">
+
+        <form action="" method="post" class="form-horizontal ">
+            <div class="form-group row">
+              <div class="col-5">
+                <input type="text" class="form-control" placeholder="Ref No">
+              </div>
+              
+               
+              <div class="col-5">
+                <select class="form-control" >
+                <option>-Bank-</option>
+                <option>Maybank</option>
+                <option>Public Bank</option>
+                <option>CIMB</option>
+                <option>AEON Credit</option>
+                <option>AM Bank</option>
+                </select>
+              </div> 
+            
+              <div class="col-2">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div> 
+            </div> 
+          </form>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Originating Financial Services</th> 
+                <th>Reference</th>
+                <th>Date Added</th>
+                <th>Total Payment</th>
+                <th>Total Amount</th>  
+                <th>Action</th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Public Bank</td> 
+                <td>PBB21022017</td>
+                <td>21 Feb 2017</td>
+                <td>3000</td>
+                <td>135,900</td>  
+                <td><a [routerLink]="['/components/paymentreceive']" class="btn btn-sm btn-success">View</a></td> 
+              </tr>
+              <tr>
+                <td>Maybank</td> 
+                <td>MBB21022017</td>
+                <td>21 Feb 2017</td>
+                <td>4000</td>
+                <td>280,900</td>  
+                <td><a [routerLink]="['/components/paymentreceive']" class="btn btn-sm btn-success">View</a> </td> 
+              </tr>
+              <tr>
+                <td>CIMB</td> 
+                <td>CIMB21022017</td>
+                <td>21 Feb 2017</td>
+                <td>5200</td>
+                <td>153,900</td>  
+                <td><a [routerLink]="['/components/paymentreceive']" class="btn btn-sm btn-success">View</a> </td> 
+              </tr>
+             <tr>
+                <td>AEON Credit</td> 
+                <td>AC21022016</td>
+                <td>21 Feb 2016</td>
+                <td>4242</td>
+                <td>335,900</td>  
+                <td><a [routerLink]="['/components/paymentreceive']" class="btn btn-sm btn-success">View</a> </td> 
+              </tr>
+              <tr>
+                <td>Public Bank</td> 
+                <td>PBB11122016</td>
+                <td>11 Dec 2016</td>
+                <td>5424</td>
+                <td>135,900</td>  
+                <td><a [routerLink]="['/components/paymentreceive']" class="btn btn-sm btn-success">View</a> </td> 
+              </tr>
+            </tbody>
+          </table>
+          <br/>
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+   
+</div>

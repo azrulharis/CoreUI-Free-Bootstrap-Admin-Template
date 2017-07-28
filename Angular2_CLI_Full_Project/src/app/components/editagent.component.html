@@ -1,0 +1,188 @@
+<style type="text/css">
+  .breadcrumb {
+    padding: 0px;
+    background: transparent;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.breadcrumb>li {
+    display: table-cell;
+    vertical-align: top;
+    width: 1%;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0;
+}
+
+.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 10px 45px;
+    position: relative;
+    display: inline-block;
+    width: calc( 100% - 10px );
+    background-color: hsla(0, 0%, 83%, 1);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.breadcrumb li.completed a {
+    background: brown;
+    background: hsla(153, 57%, 51%, 1);
+}
+
+.breadcrumb li.completed a:after {
+    border-left: 30px solid hsla(153, 57%, 51%, 1);
+}
+
+.breadcrumb li.active a {
+    background: #ffc107;
+}
+
+.breadcrumb li.active a:after {
+    border-left: 30px solid #ffc107;
+}
+
+.breadcrumb li:first-child a {
+    padding-left: 15px;
+}
+
+.breadcrumb li:last-of-type a {
+    width: calc( 100% - 38px );
+}
+
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid hsla(0, 0%, 83%, 1);
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+</style>
+
+<div class="animated fadeIn">
+
+  <div class="row">
+  <div class="col-sm-12">
+    <ul class="breadcrumb">
+      <li class="completed"><a href="javascript:void(0);">1. Company Information</a></li>
+      <li><a [routerLink]="['/components/editagent2']">2. PIC Information</a></li>
+      <li><a [routerLink]="['/components/editagent3']">3. Head of Company Information</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    
+ 
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Edit XYZ Agency Sdn Bhd</strong> 
+        </div>
+        <div class="card-block">
+        <div class="form-group">
+            <label for="logo">Company Photo / Logo</label>
+            <input type="file" class="form-control" id="logo">
+          </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="company">Company Name</label>
+            <input type="text" class="form-control" id="company" value="Edit XYZ Agency Sdn Bhd">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="roc">ROC ID</label>
+            <input type="text" class="form-control" id="roc" value="H1234567">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="gst">GST ID</label>
+            <input type="text" class="form-control" id="gst" value="004325643213">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="street">Street</label>
+            <input type="text" class="form-control" id="street" value="Enter street name">
+          </div> 
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-8">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" value="Enter your city">
+            </div>
+            <div class="form-group col-sm-4">
+              <label for="postal-code">Postal Code</label>
+              <input type="text" class="form-control" id="postal-code" value="Postal Code">
+            </div>
+          </div>
+          <!--/.row-->
+         <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="state">State</label>
+            <select class="form-control" id="state">
+            <option value="">-All State-</option>
+            <option value="1">Johor</option>
+            <option value="2">Kedah</option>
+            <option value="3">Kelantan</option>
+            <option value="4"selected>Kuala Lumpur</option>
+            <option value="5">Melaka</option>
+            <option value="6">Negeri Sembilan</option>
+            </select>
+          </div> 
+          <div class="form-group col-sm-6">
+            <label for="phone">Gen Line</label>
+            <input type="text" class="form-control" id="phone" value="0312345678">
+          </div>
+        </div>
+         <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="fax">Fax</label>
+            <input type="text" class="form-control" id="fax" value="0312345678">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label for="email">Company Email</label>
+            <input type="email" class="form-control" id="email" value="companyemail@domain.com">
+          </div>
+        </div>
+          <a class="btn btn-primary" [routerLink]="['/components/editagent2']">Next Step</a>
+ 
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+   
+</div>

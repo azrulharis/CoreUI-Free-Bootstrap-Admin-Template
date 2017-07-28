@@ -1,0 +1,159 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Debt List
+        </div>
+        <div class="card-block">
+
+        <form action="" method="post" class="form-horizontal ">
+            <div class="form-group row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Loan ID">
+              </div>
+              <div class="col-2">
+                <input type="text" class="form-control" placeholder="NRIC">
+              </div>
+              <div class="col-2">
+                <select class="form-control" >
+                <option>-All-</option>
+                <option>MEP</option>
+                <option>PF</option>
+                <option>UCEP</option>
+                <option>GEP</option>
+                </select>
+              </div> 
+              <div class="col-2">
+                <select class="form-control" >
+                <option>-Agent-</option>
+                <option>123 Credit Sdn Bhd</option>
+                <option>Rentap Sdn Bhd</option>
+                <option>Mohd Hashim</option>
+                <option>45 Management</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-3">
+                <button type="submit" class="btn btn-sm btn-primary">Search</button>
+              </div>
+            </div>
+            
+          </form>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Agency</th>
+                <th>Assign Date</th>
+                <th>Name</th>
+                <th>Loan ID</th>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Interest</th>
+                <th>LPC</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>123 Credit Sdn Bhd</td>
+                <td>23-06-2017</td>
+                <td>Samppa Nori</td>
+                <td>46364656</td>
+                <td>MEP</td>
+                <td>34,000</td>
+                <td>200</td>
+                <td>200</td>
+                <td>34,400</td> 
+                <td>
+                  <span class="badge badge-primary">Ongoing</span>
+                </td>
+                <td><a [routerLink]="['/components/viewdebt/2']" class="btn btn-sm btn-success">View</a></td>
+              </tr>
+              <tr>
+                <td>123 Credit Sdn Bhd</td>
+                <td>23-06-2017</td>
+                <td>Nurul Afiqah Bte Wahab</td>
+                <td>46364656</td>
+                <td>MEP</td>
+                <td>34,000</td>
+                <td>200</td>
+                <td>200</td>
+                <td>34,400</td> 
+                <td>
+                  <span class="badge badge-danger">Bad Debt</span>
+                </td>
+                 <td><a [routerLink]="['/components/viewdebt/2']" class="btn btn-sm btn-success">View</a></td>
+              </tr>
+              <tr>
+                <td>45 Management</td>
+                <td>23-06-2017</td>
+                <td>Rafidah Omar</td>
+                <td>46364656</td>
+                <td>MEP</td>
+                <td>34,000</td>
+                <td>200</td>
+                <td>200</td>
+                <td>34,400</td> 
+                <td>
+                  <span class="badge badge-warning">NPL</span>
+                </td>
+                 <td><a [routerLink]="['/components/viewdebt/2']" class="btn btn-sm btn-success">View</a></td>
+              </tr>
+              <tr>
+                <td>Mohd Hashim</td>
+                <td>23-06-2017</td>
+                <td>Zaki Bin Idris</td>
+                <td>46364656</td>
+                <td>UCEP</td>
+                <td>34,000</td>
+                <td>200</td>
+                <td>200</td>
+                <td>34,400</td> 
+                <td>
+                  <span class="badge badge-danger">Bad Debt</span>
+                </td>
+                 <td><a [routerLink]="['/components/viewdebt/2']" class="btn btn-sm btn-success">View</a></td>
+              </tr>
+              <tr>
+                <td>Rentap Sdn Bhd</td>
+                <td>23-02-2017</td>
+                <td>Nurul Munirah Nordin</td>
+                <td>46364656</td>
+                <td>MEP</td>
+                <td>34,000</td>
+                <td>200</td>
+                <td>200</td>
+                <td>34,400</td> 
+                <td>
+                  <span class="badge badge-success">Current</span>
+                </td>
+                 <td><a [routerLink]="['/components/viewdebt/2']" class="btn btn-sm btn-success">View</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <br/>
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+   
+</div>
